@@ -1,0 +1,32 @@
+{
+  "id": "hadamard-test",
+  "name": "Hadamard Test",
+  "category": "simulation",
+  "description": "Estimate Re(\u27e8\u03c8|U|\u03c8\u27e9) for U=Z gate and |\u03c8\u27e9=|+\u27e9 using a single ancilla qubit.",
+  "long_description": "The Hadamard test estimates the real part of the expectation value \u27e8\u03c8|U|\u03c8\u27e9 using one ancilla qubit. The ancilla is placed in superposition, a controlled-U is applied, and a final Hadamard on the ancilla transforms the relative phase into a probability difference. For U=Z and |\u03c8\u27e9=|+\u27e9, Re(\u27e8+|Z|+\u27e9) = 0, so both outcomes are equally likely. The imaginary part uses an S\u2020 gate.",
+  "difficulty": "intermediate",
+  "qubit_count": 2,
+  "clbit_count": 1,
+  "gate_count": 4,
+  "depth": 4,
+  "tags": [
+    "hadamard-test",
+    "expectation-value",
+    "quantum-simulation",
+    "ancilla"
+  ],
+  "circuit_formats": [
+    "qasm2"
+  ],
+  "source_file": "circuit.qasm",
+  "expected_output": "P(0) = P(1) = 0.5 (Re(\u27e8+|Z|+\u27e9) = 0)",
+  "references": [
+    {
+      "title": "Aharonov et al. (2009). A Polynomial Quantum Algorithm for Approximating the Jones Polynomial. Algorithmica 55(3)",
+      "url": "https://doi.org/10.1007/s00453-008-9168-0"
+    }
+  ],
+  "author": "OpenQC Community",
+  "license": "MIT",
+  "version": "1.0.0"
+}
