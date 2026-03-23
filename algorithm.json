@@ -1,0 +1,28 @@
+{
+  "slug": "hadamard-test",
+  "name": "Hadamard Test",
+  "version": "1.0.0",
+  "author": "iniestarchen",
+  "license": "Apache-2.0",
+  "description": "Estimate Re(<psi|U|psi>) for U=Z gate using a single ancilla qubit.",
+  "industries": [
+    "education"
+  ],
+  "techniques": [
+    "gate"
+  ],
+  "difficulty": "beginner",
+  "computation_model": "gate",
+  "algorithm_type": "circuit",
+  "qubit_count": 2,
+  "tags": [
+    "hadamard-test",
+    "expectation-value",
+    "ancilla"
+  ],
+  "access": "open",
+  "source": "official",
+  "metadata": {
+    "year_introduced": 1997
+  }
+}
